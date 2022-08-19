@@ -1,0 +1,72 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RPG</title>
+    <script src="https://kit.fontawesome.com/c8149ae427.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="body" class="body">
+    <div id="backdrop"></div>
+    <section class="entierity">
+      <nav>
+        <ul>
+          <li><a href="index.html"><img class="logo" src="img/Group 4.png" alt="" /></a></li>
+          <li class="dark-mode">Dark mode:Off</li>
+          <input id="toggle" class="toggle" type="checkbox" checked>
+          <li class="menu-toggle" id="menu-toggle"><i class="fa-solid fa-bars" id="fa-solid"></i></li>
+       
+          <div class="main-menu " id="main-menu">  
+            <div class="menu-close" id="menu-close"> <span class="fa fa-close" aria-hidden="true"></span>
+            </div>
+            <P class="nav-text" id="nav-text">The Random Project Generator (RPG) is brought to you by <b> Ozurumba Victor </b> a former user experience designer turned Developer.</P>
+
+               <p class="nav-text" id="nav-text"> I believe the best  step in becoming a well sKilled designer is practice. So I set out to create a helpful, elegant tool to get you started on your personal and portfolio projects.
+                
+                - Victor Ozurumba
+            </p >
+            <a href="https://github.com/Victor-Oz" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:victorozurumba12@gmail.com">  <i class="fa-solid fa-envelope"></i></a>
+            <a href="https://web.facebook.com/jusscallme.oz/" target="_blank" >  <i class="fa-brands fa-square-facebook"></i></a>
+         </div>
+
+      </nav>
+      
+      <section id="flex-container">
+        <img id="man1" class="man1-visible" src="img/Saly-11.png" alt="" />
+        <img id="man2" class="man2" src="img/Saly-12.png" alt="" />
+        <div id="options-block">
+          <h2 class="select-type" id="select-type">Select your project type <span class="mov"> </span></h2>
+          <h2 class="selected-type" id="selected-type">Here's your Generated Project Idea</h2>
+
+          <div id="main-buttons">
+            <button id="ui" class="red-large">Ui/UX <a href="#cards"></a></button>
+            <button  id="illustration" class="trans-large">Illustration</button>
+          </div>
+        </div>
+        
+      </section>
+      
+      <button class="box" id="box"> <span class="end"> </span></button>
+      <section id="cards"  class="cards">
+        <div id="card1">
+          <h3>Project Type</h3>
+          <p id="text-screen" class="ptype">Old Heading</p>
+        </div>
+        <div id="card2">
+          <h3>Brand Color</h3>
+          <div id="color-screen" ></div>
+          <div id="color-text" class="color-text"></div>
+        </div>
+      </section>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script src="src/script1.js"></script>
+      <script src="src/script2.js"></script>
+      <script src="src/script3.js"></script>
+    </section>
+  </body>
+</html>
