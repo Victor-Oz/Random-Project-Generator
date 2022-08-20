@@ -10,12 +10,14 @@ var backDrop = document.getElementById("backdrop");
 var faSolid = document.getElementById("fa-solid");
 var illust = document.getElementById("illustration");
 var cards = document.getElementById("cards");
+var card2 = document.getElementById("card2");
 var ui = document.getElementById("ui");
 var man2 = document.getElementById("man2");
 var man1 = document.getElementById("man1");
 var selectedType = document.getElementById("selected-type");
 var selectType = document.getElementById("select-type");
 var colorText = document.getElementById("color-text");
+
 
 darkMode.onclick = function () {
   body.classList.toggle("dark-body");
@@ -57,9 +59,8 @@ ui.onclick = function () {
   });
 };
 
-colorText.onclick = function () {
+card2.onclick = function () {
   navigator.clipboard.writeText(colorText.innerText);
 
-alert("Copied the text: " + colorText.innerText);
+  alert("Copied the text: " + colorText.innerText);
 };
-
