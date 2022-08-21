@@ -282,7 +282,7 @@ nav li:first-child {
 
   border-radius: 20px;
 }
-.color-card{
+.color-card {
   display: flex;
   width: 90%;
   height: 290px;
@@ -330,12 +330,14 @@ p {
   margin-bottom: 20px;
 }
 
-.color-text ,.color-text2 {
+.color-text,
+.color-text2 {
   font-size: 140%;
   font-weight: bold;
 }
-.color-text:hover ,.color-text2:hover {
-text-decoration: underline;
+.color-text:hover,
+.color-text2:hover {
+  text-decoration: underline;
 }
 
 @media (min-width: 1000px) {
@@ -521,10 +523,13 @@ text-decoration: underline;
     right: 20px;
     bottom: 10px;
   }
-.text-card{
+  .text-card {
     width: 34%;
   }
-.color-card{
+  .color-card {
     width: 34%;
+  }
+  .color-card:hover {
+    width: 33.5%;
   }
 }

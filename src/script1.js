@@ -21,6 +21,7 @@ var selectType = document.getElementById("select-type");
 var colorText = document.getElementById("color-text");
 var colorText2 = document.getElementById("color-text2");
 
+
 darkMode.onclick = function () {
   body.classList.toggle("dark-body");
   box.classList.toggle("dark-box");
