@@ -20,15 +20,39 @@ var selectedType = document.getElementById("selected-type");
 var selectType = document.getElementById("select-type");
 var colorText = document.getElementById("color-text");
 var colorText2 = document.getElementById("color-text2");
+let DarkMode = localStorage.getItem("dark-mode");
 
+const enableDarkMode = () => {
+  body.classList.add("dark-body");
+  box.classList.add("dark-box");
+  faSolid.classList.add("dark-fa-solid");
+  branding.classList.add("dark-trans-large");
+  menu.classList.add("dark-main-menu-out");
+  localStorage.setItem("dark-mode", "enabled");
+};
+
+const disableDarkMode = () => {
+  body.classList.remove("dark-body");
+    box.classList.remove("dark-box");
+    faSolid.classList.remove("dark-fa-solid");
+    branding.classList.remove("dark-trans-large");
+    menu.classList.remove("dark-main-menu-out");
+    localStorage.setItem("dark-mode", "disabled");
+};
 
 darkMode.onclick = function () {
-  body.classList.toggle("dark-body");
-  box.classList.toggle("dark-box");
-  faSolid.classList.toggle("dark-fa-solid");
-  branding.classList.toggle("dark-trans-large");
-  menu.classList.toggle("dark-main-menu-out");
+  if (body.classList == "body") {
+    enableDarkMode()
+  } else {
+  disableDarkMode()
+  }
 };
+
+
+if (DarkMode === "enabled") {
+  enableDarkMode(); // set state of darkMode on page load
+}
+
 menuToggle.onclick = function () {
   menu.classList.toggle("main-menu-out");
   backDrop.classList.toggle("backdrop");
