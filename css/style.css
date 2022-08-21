@@ -212,7 +212,7 @@ nav li:first-child {
 .red-large {
   position: relative;
   width: 47%;
-  height: 58px;
+  height: 68px;
   border: none;
   background: #d9526b;
   font-size: 1.6em;
@@ -225,7 +225,7 @@ nav li:first-child {
 .trans-large {
   position: relative;
   width: 47%;
-  height: 58px;
+  height: 68px;
   border: none;
   background: #d9d9d960;
   font-size: 1.6em;
@@ -276,6 +276,7 @@ nav li:first-child {
 }
 .text-card {
   width: 90%;
+  height: 290px;
   background: #d9d9d9d8;
   box-shadow: inset 0px 7px 7px -4px rgba(0, 0, 0, 0.25);
 
@@ -284,6 +285,7 @@ nav li:first-child {
 .color-card{
   display: flex;
   width: 90%;
+  height: 290px;
   flex-flow: column wrap;
   background: #d9d9d9d8;
   box-shadow: inset 0px 7px 7px -4px rgba(0, 0, 0, 0.25);
@@ -328,9 +330,12 @@ p {
   margin-bottom: 20px;
 }
 
-.color-text {
+.color-text ,.color-text2 {
   font-size: 140%;
   font-weight: bold;
+}
+.color-text:hover ,.color-text2:hover {
+text-decoration: underline;
 }
 
 @media (min-width: 1000px) {

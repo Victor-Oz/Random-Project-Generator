@@ -48,11 +48,13 @@ branding.onclick = function () {
   box.classList.toggle("box-none");
   selectedType.classList.toggle("selected-type-shown");
   selectType.classList.toggle("select-type-hidden");
+  ui.classList.remove("branding-cards-clicked");
+  ui.classList.add("branding-cards");
 
-  if (ui.innerText == "Go Home") {
-    ui.innerText = "UI/UX";
+  if (branding.innerText == "Close") {
+    branding.innerText = "Branding";
   } else {
-    ui.innerText = "Go Home";
+    branding.innerText = "Close";
   }
 
   window.scrollTo({
@@ -69,11 +71,13 @@ ui.onclick = function () {
   box.classList.toggle("box-none");
   selectedType.classList.toggle("selected-type-shown");
   selectType.classList.toggle("select-type-hidden");
+  branding.classList.remove("ui-cards-clicked");
+  branding.classList.add("ui-cards");
 
-  if (ui.innerText == "Go Home") {
+  if (ui.innerText == "Close") {
     ui.innerText = "UI/UX";
   } else {
-    ui.innerText = "Go Home";
+    ui.innerText = "Close";
   }
 
   window.scrollTo({
@@ -82,8 +86,6 @@ ui.onclick = function () {
     behavior: "smooth",
   });
 };
-
-
 
 card2.onclick = function () {
   navigator.clipboard.writeText(colorText.innerText);

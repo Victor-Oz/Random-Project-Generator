@@ -3,7 +3,6 @@
 var uiTxtScreen = document.getElementById("text-screen");
 var brandingTxtScreen = document.getElementById("text-screen2");
 
-
 let uiArray = [
   "Online store ",
   "Online bookstore ",
@@ -49,7 +48,6 @@ let brandingArray = [
   "Soft Drink Company",
   "Non-Profit Organisation ",
 ];
-let project2 = Math.floor(Math.random() *brandingArray.length);
+let project2 = Math.floor(Math.random() * brandingArray.length);
 
 brandingTxtScreen.innerHTML = brandingArray[project2];
-
