@@ -1,16 +1,41 @@
 /** @format */
 
-var screen1 = document.getElementById("text-screen");
-var screen2 = document.getElementById("color-screen");
-var colorText = document.getElementById("color-text");
+var uiTxtScreen = document.getElementById("text-screen");
+var brandingTxtScreen = document.getElementById("text-screen2");
 
-let arr = [
-  "Online store",
-  "Online bookstore",
-  "House shareing service",
+
+let uiArray = [
+  "Online store ",
+  "Online bookstore ",
+  "House shareing service ",
   "Car sharing sevice",
   "Holiday themed website",
   "Political campaign site",
+  "Network provider ",
+  "Online bookstore ",
+  "movie streaming service",
+  "Farm Equipment Rental Service",
+  "Computer Hardware Retailer",
+  "Furniture manufacturing company",
+  "Chicken Resturant",
+  "Online Boutique",
+  "Record label site",
+  "Coffee Shop",
+  "Soft Drink Company",
+  "Non-Profit Organisation ",
+];
+
+let project = Math.floor(Math.random() * uiArray.length);
+
+uiTxtScreen.innerHTML = uiArray[project];
+
+let brandingArray = [
+  "fashion",
+  "bookstore",
+  "Real estate company",
+  "Car sharing sevice",
+  "Holiday Resort",
+  "Political party ",
   "Network provider landing page",
   "Online bookstore checkout page",
   "House shareing service",
@@ -24,17 +49,7 @@ let arr = [
   "Soft Drink Company",
   "Non-Profit Organisation ",
 ];
+let project2 = Math.floor(Math.random() *brandingArray.length);
 
-let project = Math.floor(Math.random() * arr.length);
+brandingTxtScreen.innerHTML = brandingArray[project2];
 
-
-
-
-screen1.innerHTML = arr[project];
-
-    const randomColor = Math.floor(Math.random()*16777215).toString(16);
-    let color = "#" + randomColor;
-    screen2.style.backgroundColor = color;
- 
-    colorText.innerText = color;
-    
