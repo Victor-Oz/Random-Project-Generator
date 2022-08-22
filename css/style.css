@@ -40,13 +40,19 @@ nav li:first-child {
 .logo {
   width: 100px;
 }
+
+.victor{
+  margin-bottom: 0;
+  margin-top: 100px;
+width: 153px;
+}
 .nav-text {
   color: #ffffff;
   font-size: 1.1rem;
   width: 80%;
   line-height: 30px;
-  padding-top: 70px;
-  margin: 40px;
+ 
+  margin-left: 40px;
   text-align: left;
 }
 [class^="fa-"] {
@@ -83,6 +89,9 @@ nav li:first-child {
   background-color: #562ecd;
 }
 .main-menu-out {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
   right: 0px;
   top: 0;
   height: 100%;
@@ -375,7 +384,7 @@ p {
 }
 
 .loader-text {
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 700;
   color: white;
