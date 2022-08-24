@@ -42,7 +42,7 @@ let brandingArray = [
   "Computer Hardware Retailer",
   "Furniture manufacturing company",
   "Chicken Resturant menu page",
-  "Online Boutique",
+  "Boutique",
   "Record label site",
   "Coffee Shop Landing page",
   "Soft Drink Company",
