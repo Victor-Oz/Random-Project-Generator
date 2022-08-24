@@ -351,16 +351,10 @@ p {
 
 .color-card[data-description] {
   position: relative;
-
-
-
 }
 
-.color-card[data-description]:hover::after
- {
-  display: none;
-
-
+.color-card[data-description]:hover::after {
+  opacity: 0;
 }
 
 .loader-wrapper {
@@ -638,14 +632,10 @@ p {
 
 .color-card[data-description] {
   position: relative;
-
-
-
 }
 
-.color-card[data-description]:hover::after
- {
-  display: block;
+.color-card[data-description]:hover::after {
+  opacity: 0.9;
   content: attr(data-description);
   position: absolute;
   top: -60px;
@@ -657,5 +647,4 @@ p {
   color: #000000;
   font-size: 14px;
   z-index: 1;
-
 }
