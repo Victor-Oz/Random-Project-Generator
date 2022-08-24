@@ -349,6 +349,20 @@ p {
   text-decoration: underline;
 }
 
+.color-card[data-description] {
+  position: relative;
+
+
+
+}
+
+.color-card[data-description]:hover::after
+ {
+  display: none;
+
+
+}
+
 .loader-wrapper {
   z-index: 100000;
   width: 100%;
@@ -631,6 +645,7 @@ p {
 
 .color-card[data-description]:hover::after
  {
+  display: block;
   content: attr(data-description);
   position: absolute;
   top: -60px;
