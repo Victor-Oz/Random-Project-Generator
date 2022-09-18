@@ -1,0 +1,34 @@
+{
+  "name": "Random Project Generator",
+  "short_name": "RPG",
+  "start_url": "./?utm_source=pwa",
+  "theme_color": "purple",
+  "scope": "./",
+  "display": "standalone",
+
+  "icons": [
+    {
+      "src": "icons/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "description": "This app generates a random project name and theme color ",
+  "screenshots": [
+    {
+      "src": "icons/Capture1.PNG",
+      "sizes": "369x678",
+      "type": "image/png"
+    },
+    {
+        "src": "icons/Capture2.PNG",
+        "sizes": "373x681",
+        "type": "image/png"
+      } ,
+      {
+        "src": "icons/Capture3.PNG",
+        "sizes": "1899x868",
+        "type": "image/png"
+      }
+  ]
+}
