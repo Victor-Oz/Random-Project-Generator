@@ -102,6 +102,10 @@ nav li:first-child {
   background-color: #562ecd;
 }
 
+
+.faq{
+  border: 10px red solid;
+}
 .dark-main-menu-out {
   background-color: #160b36;
 }

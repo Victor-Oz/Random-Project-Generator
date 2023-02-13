@@ -33,21 +33,20 @@ const enableDarkMode = () => {
 
 const disableDarkMode = () => {
   body.classList.remove("dark-body");
-    box.classList.remove("dark-box");
-    faSolid.classList.remove("dark-fa-solid");
-    branding.classList.remove("dark-trans-large");
-    menu.classList.remove("dark-main-menu-out");
-    localStorage.setItem("dark-mode", "disabled");
+  box.classList.remove("dark-box");
+  faSolid.classList.remove("dark-fa-solid");
+  branding.classList.remove("dark-trans-large");
+  menu.classList.remove("dark-main-menu-out");
+  localStorage.setItem("dark-mode", "disabled");
 };
 
 darkMode.onclick = function () {
   if (body.classList == "body") {
-    enableDarkMode()
+    enableDarkMode();
   } else {
-  disableDarkMode()
+    disableDarkMode();
   }
 };
-
 
 if (DarkMode === "enabled") {
   enableDarkMode(); // set state of darkMode on page load
@@ -113,13 +112,13 @@ ui.onclick = function () {
 };
 
 card2.onclick = function () {
-  navigator.clipboard.writeText(colorText.innerText);
+  navigator.clipboard.writeText(this.innerText);
 
-  alert("Copied the text: " + colorText.innerText);
+  alert("Copied the Colour : " + this.innerText);
 };
 
 card4.onclick = function () {
-  navigator.clipboard.writeText(colorText2.innerText);
+  navigator.clipboard.writeText(this.innerText);
 
-  alert("Copied the text: " + colorText2.innerText);
+  alert("Copied the Colour: " + this.innerText);
 };
