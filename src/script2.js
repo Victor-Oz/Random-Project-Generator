@@ -2,8 +2,11 @@
 var loaderWrapper = document.getElementById("loader-wrapper");
 
 setTimeout(function () {
+  document.getElementsByTagName('body')[0].style.overflow = 'hidden';
   loaderWrapper.classList.add("loader-wrapper-none");
 }, 3000);
+
+
 
 var typed = new Typed(".loader-text", {
   strings: [, "Random Project Generator"],
